@@ -1,0 +1,17 @@
+[
+  {
+    "label": "解锁屏幕数字密码",
+    "name": "密码",
+    "validation": "required"
+  },
+  {
+    "label": "选择器",
+    "type": "select",
+    "name": "phonelock",
+    "options": {
+      "a": "图形锁(未开发)",
+      "b": "数字密码锁"
+    },
+    "validation": "required"
+  }
+]
