@@ -94,9 +94,9 @@ dotask();
 						//   back()
 						// }
 sleep(5000);
-let i = 0;  
-let n = 0;
-var b = 0;
+// let i = 0;  
+// let n = 0;
+// var b = 0;
 		// // function searchStrSplit(str, target) {
 		// //    return str.split(target).length - 1
 		// // }
@@ -113,14 +113,18 @@ function countStringOccurrences(elements, target) {
 }
 
 function dotask(){
+ let i = 0;  
+ let n = 0;
+ var b = 0;
 while (true) {	
-  	var n = 0;
-  	var i = 0;
-  	var b = 0;
+  	// var n = 0;
+  	// var i = 0;
+  	// var b = 0;
     sleep(2000);
-    var elements = text('去完成').find();  
- 		var f = countStringOccurrences(elements,'去完成');
-    if (f != 0) { // 如果没有找到匹配的元素，结束循环   
+var elements = text('去完成').find();  
+ 	var f = countStringOccurrences(elements,'去完成');
+    if (f != 0) { 
+// 如果没有找到匹配的元素，结束循环   
 //         console.log('所有任务已完成');  
 //         n=i+1;
 //         break;  
@@ -202,7 +206,7 @@ if(text('去观看').exists()){
 back();
 home();
 console.log('所有任务已完成!');
-sleep(2000);
+sleep(3000);
 importClass(android.accessibilityservice.AccessibilityService)
 var success = runtime.accessibilityBridge.getService().performGlobalAction(AccessibilityService.GLOBAL_ACTION_LOCK_SCREEN)
 console.hide();
